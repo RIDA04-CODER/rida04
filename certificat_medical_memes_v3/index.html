@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificat Médical - Demande Spéciale pour Salma</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header avec animation -->
+    <header class="header-section text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-primary bounce-text">Salma, J'ai Besoin de Ton Aide !</h1>
+            <p class="lead mt-3 typewriter">Quand les cours deviennent trop intenses, seul un certificat médical peut me sauver !</p>
+        </div>
+    </header>
+
+    <!-- Section principale avec mèmes -->
+    <section class="meme-section py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8">
+                    <div class="card meme-card shadow-lg">
+                        <div class="card-body text-center">
+                            <h2 class="card-title mb-4">Mission Urgente : Certificat Médical !</h2>
+                            <p class="card-text fs-5">Chère Salma, j'ai besoin de ton expertise d'infirmière... et d'un certificat médical ! 🏥</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Première rangée de mèmes -->
+            <div class="row mb-5">
+                <div class="col-md-6 mb-4">
+                    <div class="card meme-card h-100 shadow hover-effect">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="mb-0">Moi quand je dois expliquer pourquoi j'ai besoin d'un certificat</h3>
+                        </div>
+                        <div class="card-body text-center">
+                            <img src="images/nurse_meme_night_shift.webp" alt="Mème d'infirmière de nuit" class="img-fluid meme-image mb-3">
+                            <p class="card-text">Quand Salma me demande si je suis prêt à expliquer mes symptômes...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card meme-card h-100 shadow hover-effect">
+                        <div class="card-header bg-success text-white">
+                            <h3 class="mb-0">Ma pause entre deux examens</h3>
+                        </div>
+                        <div class="card-body text-center">
+                            <img src="images/nurse_meme_student_break.webp" alt="Mème d'étudiant en pause" class="img-fluid meme-image mb-3">
+                            <p class="card-text">Quand j'essaie de prendre une pause rapide entre les révisions...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deuxième rangée avec un mème et un message humoristique -->
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card meme-card h-100 shadow hover-effect">
+                        <div class="card-header bg-warning text-dark">
+                            <h3 class="mb-0">Ma vie d'étudiant en ce moment</h3>
+                        </div>
+                        <div class="card-body text-center">
+                            <img src="images/nurse_meme_fasting.jpeg" alt="Mème de jeûne" class="img-fluid meme-image mb-3">
+                            <p class="card-text">Quand je n'ai même pas le temps de manger entre les révisions...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card message-card h-100 shadow pulse-effect">
+                        <div class="card-header bg-info text-white">
+                            <h3 class="mb-0">Un message pour toi, Salma</h3>
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <p class="card-text fs-4 text-center">Ton certificat médical serait comme une bouée de sauvetage dans mon océan de devoirs</p>
+                            <p class="card-text fs-5 text-center mt-3">Avec ton expertise médicale et ton professionnalisme, tu peux sauver ma moyenne semestrielle !</p>
+                            <div class="text-center mt-4">
+                                <button id="certificateBtn" class="btn btn-lg btn-primary pulse-button">
+                                    <i class="fas fa-file-medical me-2"></i>Générer mon certificat !
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section finale avec animation -->
+    <section class="final-section py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card conclusion-card shadow-lg">
+                        <div class="card-body text-center">
+                            <h2 class="card-title mb-4">S'il te plaît, Salma, aide un pauvre étudiant en détresse académique !</h2>
+                            <p class="card-text fs-5">Un certificat médical de toi vaut tous les points bonus du monde !</p>
+                            <p class="card-text fs-5 mt-3">Promis, je reviendrai te voir quand j'aurai vraiment besoin de soins médicaux !</p>
+                            <div class="diploma-container mt-4">
+                                <div class="diploma"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal pour le certificat -->
+    <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="certificateModalLabel">Certificat Médical</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="certificate-container p-4 border border-primary rounded">
+                        <div class="text-center mb-4">
+                            <h2 class="text-primary">Certificat Médical</h2>
+                            <p class="fs-5">Délivré par: Salma, Infirmière Professionnelle</p>
+                        </div>
+                        <p class="fs-5">Je soussignée, Salma, infirmière diplômée, certifie que l'étudiant(e) mentionné(e) ci-dessous:</p>
+                        <p class="fs-5 text-center fw-bold my-4">_________________________</p>
+                        <p class="fs-5">Présente un état de fatigue extrême dû à une surexposition aux examens et aux révisions intensives.</p>
+                        <p class="fs-5">Diagnostic: Syndrome de l'étudiant en détresse académique aiguë</p>
+                        <p class="fs-5">Traitement recommandé: Repos, chocolat chaud, et absence justifiée des cours pour une durée de ___ jours.</p>
+                        <div class="row mt-5">
+                            <div class="col-6">
+                                <p class="fs-5">Date: ___/___/______</p>
+                            </div>
+                            <div class="col-6 text-end">
+                                <p class="fs-5">Signature: ________________</p>
+                            </div>
+                        </div>
+                        <div class="certificate-stamp"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" id="printCertificate">
+                        <i class="fas fa-print me-2"></i>Imprimer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0">Créé avec beaucoup d'humour pour Salma, la meilleure infirmière du campus</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personnalisé -->
+    <script src="js/script.js"></script>
+</body>
+</html>
